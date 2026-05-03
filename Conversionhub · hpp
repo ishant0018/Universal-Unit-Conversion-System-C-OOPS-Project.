@@ -1,7 +1,7 @@
 #include <string>
-
+#include <iostream>
 class Converter;
-class ConversionResult;
+class ConversionResult;                
 
 using std::string;
 using std::cout;
