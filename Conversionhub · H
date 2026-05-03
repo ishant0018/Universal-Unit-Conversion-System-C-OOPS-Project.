@@ -1,3 +1,4 @@
+#Pragma once
 #include <string>
 
 class Converter;
