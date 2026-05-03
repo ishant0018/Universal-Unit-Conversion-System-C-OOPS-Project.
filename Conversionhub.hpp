@@ -1,8 +1,8 @@
 #include <string>
+#include <stdexcept>
 #include <iostream>
-class Converter;
-class ConversionResult;                
 
+#include "ConversionResult.h"
 using std::string;
 using std::cout;
 using std::invalid_argument;
@@ -10,7 +10,7 @@ using std::invalid_argument;
 // Manages all 10 converters.
 class ConversionHub {
     static const int COUNT = 10;
-    Converter* converters[COUNT];
+    
     string     keys[COUNT];
 
     int findIndex(const string& cat) const {
