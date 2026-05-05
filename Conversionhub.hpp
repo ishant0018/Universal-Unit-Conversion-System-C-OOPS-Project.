@@ -12,7 +12,7 @@ class ConversionHub {
     static const int COUNT = 10;
     
     string     keys[COUNT];
-
+Converter* converters[COUNT]
     int findIndex(const string& cat) const {
         for (int i = 0; i < COUNT; i++)
             if (keys[i] == cat) return i;
