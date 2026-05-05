@@ -68,7 +68,7 @@ class LengthConverter : public Converter {
 };
   \\
 
-  \\3. Temprataure (non-linear,pivot;celcius)
+  //3. Temprataure (non-linear,pivot;celcius)
      //
 
      class TempratureConverter : public conveter{
