@@ -6,15 +6,15 @@
 using std::string;
 using std::cout;
 using std::invalid_argument;
+                                //manage different types of unit conversion based on category and unit .
 
-// Manages all 10 converters.
 class ConversionHub {
-    static const int COUNT = 10;
+    static const int COUNT = 10;             // maximum no. of conversion  categories . 
     
-    string     keys[COUNT];
+    string     keys[COUNT];          //array storing category names (like length,mass) etc
 Converter* converters[COUNT]
-    int findIndex(const string& cat) const {
-        for (int i = 0; i < COUNT; i++)
+    int findIndex(const string& cat) const {           // search for a category in keys
+        for (int i = 0; i < COUNT; i++)                  
             if (keys[i] == cat) return i;
         return -1;
     }
@@ -35,6 +35,6 @@ public:
                               const string& from,
                               const string& to) const;
 
-    void listAllUnits()   const;
+    void listAllUnits()   const;                //display all unit available in each category
     void listCategories() const;
 };
