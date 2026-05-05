@@ -5,7 +5,7 @@
 using std::cout;
 using std::cin;
 using std::string;
- 
+                                                 //basic information about title, libraries used, number of categories, and units
 int main() {
     cout << "Universal Unit Conversion System\n";
     cout << "Libraries: iostream, cmath, string only\n";
